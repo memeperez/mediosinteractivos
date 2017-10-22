@@ -24,7 +24,7 @@ var colox = 255
 
 function preload(){
 
-  miCancion = loadSound ('069 - akira ifukube - godzilla - main title (1954).mp3');
+  miCancion = loadSound ('assets/069 - akira ifukube - godzilla - main title (1954).mp3');
 }
 
 
