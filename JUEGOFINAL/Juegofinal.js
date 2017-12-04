@@ -121,7 +121,7 @@ function touchMoved() {
   
     for (var j = 0; j < touches.length; j++) {
 
-    if (dist(touches[j].x, touches[j].y, Estre[i].x, Estre[i].y) < 20 && Estre[i].viva) {
+    if (dist(Estre[i].x, Estre[i].y,touches[j].x, touches[j].y) < 20 && Estre[i].viva) {
 
       //si el boton es presionado borra la pantalla
        Estre[i].morirse();
