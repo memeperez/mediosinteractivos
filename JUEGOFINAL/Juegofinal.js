@@ -117,32 +117,21 @@ function draw() {
 
 function touchMoved() {
   
-  Estre2.moverse();
-  
-    for (var j = 0; j < touches.length; j++) {
+Estre2.moverse();
+  //recorre toda la lista de bolas
+  for (var i = 0; i < numE; i++) {
 
-    if (dist(Estre[i].x, Estre[i].y,touches[j].x, touches[j].y) < 20 && Estre[i].viva) {
-
-      //si el boton es presionado borra la pantalla
-       Estre[i].morirse();
-       puntaje = puntaje+1
+    //revisa si se estaba tocando alguna bola y en tal caso la mata
+    //se usa touches[0] porque se asume que solo hay un toque a la vez
+    if (dist(touches[0].x, touches[0].y, Estre[i].x, Estre[i].y) < 20 && Estre[i].viva) {
+      Estre[i].morirse();
+      puntaje = puntaje+1
     }
+    
+    
   }
   
-//Estre2.moverse();
- 
-//  for (var i = 0; i < numE; i++) {
-
- //   if (touches.length > 0){
- //   if dist(touches[0].x, touches[0].y, Estre[i].x, Estre[i].y) < 20 && Estre[i].viva){ 
- //     Estre[i].morirse();
-  //    puntaje = puntaje+1
-   // }
- // }
-    
- // }
-  
- // return false
+  return false
 }
 
 
