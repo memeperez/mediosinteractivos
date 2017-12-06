@@ -82,8 +82,8 @@ function draw() {
     text("P " + puntaje, 10, 30);
     
     Estre2.dibujo();
-    //Estre2.moverse();
-    cancion2.play();
+
+    //cancion2.play();
 
   
     
@@ -109,7 +109,7 @@ function draw() {
     textAlign(CENTER);
     textSize(60);
     text("Ganador!", width / 2, height / 2);
-    cancion.play();
+    //cancion.play();
   }
 }
 
